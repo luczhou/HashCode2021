@@ -5,9 +5,9 @@ import java.util.*;
 public class Simulation {
 	int totalTime;
 	int destinationPoints;
-	ArrayList<Car> cars = new ArrayList<Car>();
-	Set<Street> streets = new HashSet<Street>();
-	Set<Intersection> intersections = new HashSet<Intersection>();
+	Map<Integer, Car> cars = new HashMap<Integer, Car>();
+	Map<String, Street> streets = new HashMap<String, Street>();
+	Map<Integer, Intersection> intersections = new HashMap<Integer, Intersection>();
 	
 	public static void main(String[] args){
 		
