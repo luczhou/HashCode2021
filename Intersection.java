@@ -3,19 +3,17 @@ package traffic;
 import java.util.*;
 
 public class Intersection {
-	Set<Car> cars;
-	Map<String, Street> streets;
+	Set<LinkedList<Integer>> cars;
 	int num;
 	
 	public Intersection(int num){
 		this.num = num;
-		streets = new HashMap<>();
-		cars = new HashSet<Car>();
+		cars = new HashSet<>();
 	}
 	
-	public void addStreet(Street street){
-		streets.put(street.getName(), street);
-	}
-	
+//	public void addCar(int carId){
+//		cars.add(carId);
+//	}
+//	
 	
 }
